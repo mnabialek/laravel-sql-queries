@@ -91,7 +91,7 @@ trait ReplacesBindings
     protected function getRegex()
     {
         return $this->wrapRegex(
-            $this->notInsideQuotes('?[^$]')
+            $this->notInsideQuotes('?')
             . '|' .
             $this->notInsideQuotes('[^:]\:\w+', false)
         );
